@@ -1,0 +1,274 @@
+.tpvn-work {
+  font-size: 24px;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  .wrapper {
+    margin: 40px 160px;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .hlt {
+    font-weight: 600;
+  }
+  .tpvn-main {
+    .logo {
+      text-align: center;
+      a {
+        font-size: 32px;
+        color: #666;
+        line-height: 26px;
+      }
+      .logo-text {
+        display: block;
+        font-size: 15px;
+        color: #333;
+        opacity: 0.4;
+      }
+    }
+    .language-option {
+      position: absolute;
+      right: 200px;
+      top: 40px;
+      font-size: 11px;
+      padding: 5px;
+      text-indent: -6px;
+      .selectLang {
+        display: block;
+        width: 80px;
+        line-height: 24px;
+        font-size: 11px;
+        color: #166293;
+        border: 1px solid #166293;
+        border-radius: 3px;
+        text-align: center;
+        font-weight: normal;
+      }
+      ul.languageTab {
+        display: none;
+        list-style: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        padding-left: 5px;
+        color: #166293;
+        z-index: 9999;
+        li {
+          font-size: 11px;
+          margin-top: -1px;
+          a {
+            display: block;
+            width: 75px;
+            border: 1px solid #166293;
+            border-radius: 0;
+            text-indent: 0;
+            color: inherit;
+            padding-left: 5px;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+    .organization-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 60px;
+      margin-bottom: 120px;
+      & > div {
+        width: 33.3%;
+        text-align: center;
+        color: #707070;
+        .category-text {
+          font-size: 15px;
+          color: #cccccc;
+        }
+      }
+      .about-us {
+        .category-text {
+          opacity: 0.3;
+        }
+      }
+      .work {
+        color: #3c84c6;
+        .category-text {
+          color: #91c5eb;
+          opacity: 0.3;
+        }
+      }
+      .contact {
+        .category-text {
+          opacity: 0.3;
+        }
+      }
+    }
+    .top-tooltip {
+      width: 480px;
+      height: 1px;
+      background: #3c84c6;
+    }
+    .top-title {
+      font-size: 80px;
+      font-weight: 100;
+      color: #3c84c6;
+      margin: 0;
+      margin-top: 31px;
+      line-height: 57px;
+    }
+    .tpvn-services {
+      font-size: 16px;
+      line-height: 32px;
+      color: #333333;
+      .local-service {
+        .main-container {
+          .work-slider {
+            p.slider-title {
+              margin-top: 60px;
+              font-size: 32px;
+              color: #cccccc;
+            }
+            .slider-container {
+              overflow: hidden;
+              margin-top: 38px;
+              .slick-arrow {
+                z-index: 1000;
+              }
+              .slick-prev:before, .slick-next:before {
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 24px;
+                color: #333333;
+              }
+              .slick-prev {
+                left: 25px;
+                &:before {
+                  content: '\2039';
+                }
+              }
+              .slick-next {
+                right: 25px;
+                &:before {
+                  content: '\203A';
+                }
+              }
+              .slick-slide {
+                height: 780px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0,0,0,0.3);
+                color: #ffffff;
+              }
+              & > div {
+                text-align: center;
+              }
+            }
+          }
+          .service-detail {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 112px;
+            .service-description {
+              flex-basis: 1014px;
+              a {
+                display: block;
+                color: #3c84c6;
+              }
+              .mg-top40 {
+                margin-top: 40px;
+              }
+            }
+            .service-feature {
+              flex-basis: 757px;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .feature-content {
+                flex-basis: 473px;
+              }
+            }
+          }
+        }
+      }
+      .qsale-korea {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 139px;
+        color: #ffffff;
+        .qsale-banner {
+          position: absolute;
+          height: 925px;
+          width: 100%;
+          background: linear-gradient(to right, #91c5eb, #3c84c6);
+          z-index: -1;
+          .banner-label {
+            position: absolute;
+            top: 61px;
+            left: 149px;
+            font-size: 32px;
+          }
+        }
+        .qsale-detail {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 631px;
+          width: 100%;
+          .qsale-text {
+            .qsale-title {
+              font-size: 44px;
+              line-height: 40px;
+              font-weight: 800;
+              letter-spacing: 0.5em;
+            }
+            .qsale-desciption {
+              margin-top: 23px;
+              max-width: 430px;
+              line-height: 24px;
+            }
+          }
+          .qsale-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 426px;
+            width: 800px;
+            margin-left: 78px;
+            background: #ffffff;
+            color: #333333;
+          }
+        }
+        .qsale-brands {
+          width: 100%;
+          max-width: 1440px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+          .qsale-brand {
+            .image-brand {
+              text-align: center;
+              width: 240px;
+              height: 240px;
+            }
+            .text-brand {
+              color: #333333;
+              line-height: 24px;
+              max-width: 240px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
   }
+  .hlt {
+    font-weight: 600;
+  }
   .tpvn-main {
     .logo {
       text-align: center;
@@ -112,11 +115,11 @@
       color: #3c84c6;
       margin: 0;
       margin-top: 31px;
-      margin-bottom: 173px;
       line-height: 57px;
     }
     .tpvn-employees {
       .main-container {
+        margin-top: 79px;
         .employee-profiles {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -156,10 +159,8 @@
     }
     .tpvn-overview {
       margin-top: 80px;
-      .hlt {
-        font-weight: 600;
-      }
       .overview-quotes {
+        margin-top: 173px;
         text-align: center;
         .quote-text {
           margin: 0 auto;

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'work/work'
+
   get 'about/about'
 
   get 'contact/contact'
