@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,400,400i,700,800&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,400,400i,600,700,800&subset=vietnamese');
 body {
   font-family: 'Fira Sans', sans-serif;
   a, a:hover, a:focus {
@@ -35,10 +35,11 @@ body {
       .tpvn-main {
         .content {
           position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
           justify-content: center;
-          text-align: center;
+          align-items: center;
           min-height: 500px;
           .is-bg {
             position: absolute;
@@ -69,6 +70,8 @@ body {
           }
         }
         .organization-content {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           flex-wrap: wrap;
           & > div {
