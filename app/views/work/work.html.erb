@@ -11,7 +11,7 @@
             </a>
         </div>
         <div class="language-option" style="background: url(<%= asset_path 'selectLang.png' %>)no-repeat 75px 7px;">
-            <a class="selectLang" href="#">Vietnamese</a>
+            <a class="selectLang" href="javascript:;">Vietnamese</a>
             <ul class="languageTab">
                 <li>
                     <a href="#">Vietnamese</a>
@@ -199,6 +199,11 @@
             fade: true,
             cssEase: 'linear',
         });
+        $('.selectLang').click(function() {
+            $( ".languageTab" ).toggle( "slow", function() {
+                // Animation complete.
+            });
+        })
     });
 </script>
 </body>
