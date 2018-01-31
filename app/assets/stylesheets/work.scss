@@ -3,7 +3,7 @@
   font-family: 'Fira Sans', sans-serif;
   margin: 0;
   .wrapper {
-    margin: 40px 160px;
+    margin: 0 160px;
   }
   p {
     margin: 0;
@@ -17,6 +17,7 @@
   }
   .tpvn-main {
     .logo {
+      margin-top: 40px;
       text-align: center;
       a {
         font-size: 32px;
@@ -52,7 +53,7 @@
         display: none;
         list-style: none;
         position: absolute;
-        top: 25px;
+        top: 35px;
         left: 0;
         padding-left: 5px;
         color: #166293;
@@ -118,20 +119,22 @@
       color: #3c84c6;
       margin: 0;
       margin-top: 31px;
+      margin-left: -10px;
       line-height: 57px;
     }
+    p.product-title {
+      margin-top: 60px;
+      font-size: 32px;
+      color: #cccccc;
+    }
     .tpvn-services {
+      margin-top: 139px;
       font-size: 16px;
       line-height: 32px;
       color: #333333;
       .local-service {
         .main-container {
           .work-slider {
-            p.slider-title {
-              margin-top: 60px;
-              font-size: 32px;
-              color: #cccccc;
-            }
             .slider-container {
               overflow: hidden;
               margin-top: 38px;
@@ -199,10 +202,11 @@
         }
       }
       .qsale-korea {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        margin-top: 139px;
         color: #ffffff;
         .qsale-banner {
           position: absolute;
@@ -218,6 +222,8 @@
           }
         }
         .qsale-detail {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -251,23 +257,125 @@
           width: 100%;
           max-width: 1440px;
           margin: 0 auto;
+          margin-bottom: 135px;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           flex-wrap: wrap;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-around;
           .qsale-brand {
             .image-brand {
-              text-align: center;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               width: 240px;
-              height: 240px;
+              height: 100px;
+              background: rgba(1,1,1,0.3);
             }
             .text-brand {
               color: #333333;
               line-height: 24px;
               max-width: 240px;
+              margin-top: 10px;
             }
           }
         }
+      }
+    }
+    .tpvn-beauty_commerce {
+      position: relative;
+      line-height: 32px;
+      color: #333333;
+      margin-top: 60px;
+      .top-container {
+        .top-tooltip {
+          width: 1600px;
+          background: #d0d0d0;
+        }
+      }
+      .beauty_commerce-banner {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 1293px;
+        height: 880px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(3,3,3,0.1);
+        z-index: -1;
+      }
+      .beauty_commerce-detail {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 292px;
+        height: 790px;
+        .beauty_commerce-content {
+          .detail-title {
+          }
+          .beauty_commerce-text {
+            font-size: 16px;
+            margin-top: 39px;
+          }
+        }
+      }
+    }
+    .tpvn-software_development {
+      margin-top: 100px;
+      .software_development-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        line-height: 32px;
+        color: #333333;
+        & > div {
+          margin-top: 78px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          .title {
+            flex-basis: 30%;
+          }
+          .detail {
+            flex-basis: 70%;
+            font-size: 16px;
+          }
+        }
+        .customer-logo {
+          width: 100%;
+          height: 667px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: rgba(3,3,3,0.1);
+        }
+      }
+    }
+    .tpvn-office_map {
+      margin-top: 101px;
+      .map {
+        width: 100%;
+        height: 794px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(3,3,3,0.1);
       }
     }
   }
