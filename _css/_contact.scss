@@ -1,0 +1,141 @@
+.tpvn-contact {
+  .tpvn-main {
+    .contact-banner {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      img {
+        max-width: 100%;
+        object-fit: scale-down;
+      }
+    }
+    .vietnam-offices {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-bottom: 120px;
+      .office-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin-top: 120px;
+        .office-title {
+          display: block;
+          flex-basis: 35%;
+          font-size: 32px;
+        }
+        .office-details {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          flex-basis: 75%;
+          margin: 0;
+          li {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 32px;
+            & span {
+              color: #3c84c6;
+              margin-right: 50px;
+            }
+            & p {
+              margin: 0;
+              max-width: 600px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tpvn-contact {
+    .tpvn-main {
+      .contact-banner {
+        overflow: hidden;
+        img {
+          max-width: none !important;
+        }
+      }
+      .organization-content {
+        & > div {
+          flex-basis: 100%;
+          justify-content: flex-start !important;
+          line-height: 50px;
+          & > a {
+            padding: 0;
+            flex-direction: row !important;
+            flex-basis: 100%;
+            align-items: left !important;
+            text-align: left;
+            .title {
+              flex-basis: 50%;
+              text-indent: 20px;
+            }
+            .category-text {
+              flex-basis: 50%;
+            }
+          }
+          .about-us {
+            padding-left: 0 !important;
+          }
+          .contact {
+            padding-right: 0 !important;
+          }
+        }
+      }
+      .vietnam-offices {
+        margin: 52px 0 !important;
+        .office-box {
+          margin-top: 52px !important;
+          flex-direction: column;
+          .office-title {
+            flex-basis: auto !important;
+          }
+          .office-details {
+            flex-basis: auto !important;
+            margin-top: 30px !important;
+            li {
+              flex-wrap: nowrap !important;
+              span {
+                margin-right: 20px !important;
+              }
+              p {
+                max-width: 300px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 414px) {
+  .tpvn-contact {
+    .tpvn-main {
+      .vietnam-offices {
+        margin: 18px 0 !important;
+        .office-box {
+          margin-top: 18px!important;
+          .office-details {
+            margin-top: 18px!important;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,482 @@
+.tpvn-work {
+  .tpvn-main {
+    p.product-title {
+      margin-top: 55px;
+      font-size: 32px;
+      color: #cccccc;
+    }
+    .tpvn-services {
+      font-size: 16px;
+      line-height: 32px;
+      color: #333333;
+      .local-service {
+        .main-container {
+          .work-slider {
+            .slider-container {
+              overflow: hidden;
+              margin-top: 38px;
+              .slick-arrow {
+                z-index: 1000;
+              }
+              .slick-prev:before, .slick-next:before {
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 58px;
+                color: #333333;
+              }
+              .slick-prev {
+                left: 25px;
+                &:before {
+                  content: '\2039';
+                }
+              }
+              .slick-next {
+                right: 25px;
+                &:before {
+                  content: '\203A';
+                }
+              }
+              .slick-slide {
+                height: 780px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: #ffffff;
+                color: #333333;
+                img {
+                  height: 100%;
+                  object-fit: scale-down;
+                }
+              }
+              & > div {
+                text-align: center;
+              }
+            }
+          }
+          .service-detail {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;
+            margin-top: 112px;
+            & > div {
+              max-width: 1024px;
+            }
+            .service-description {
+              flex-basis: 90%;
+              a {
+                display: block;
+                color: #3c84c6;
+              }
+              .mg-top40 {
+                margin-top: 20px;
+              }
+              .app-available {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .store-logo {
+                  img {
+                    max-width: 357px;
+                    width: 160px;
+                    object-fit: scale-down;
+                  }
+                  &:nth-child(2) {
+                    margin-left: 20px;
+                  }
+                }
+              }
+            }
+            .service-feature {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              align-items: center;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+      .qsale-korea {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        color: #ffffff;
+        margin-top: 130px;
+        .qsale-banner {
+          position: absolute;
+          height: 925px;
+          width: 100%;
+          background: url('../../images/tpvn/qsale_bg.png') no-repeat top left;
+          z-index: -1;
+          .banner-label {
+            position: absolute;
+            top: 61px;
+            left: 149px;
+            font-size: 32px;
+          }
+        }
+        .qsale-detail {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 631px;
+          width: 100%;
+          .qsale-text {
+            & > p {
+              padding-left: 60px;
+            }
+            .qsale-title {
+              font-size: 44px;
+              line-height: 40px;
+              font-weight: 800;
+              letter-spacing: 0.5em;
+            }
+            .qsale-desciption {
+              margin-top: 23px;
+              max-width: 430px;
+              line-height: 24px;
+            }
+          }
+          .qsale-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 78px;
+            color: #333333;
+            img {
+              max-width: 100%;
+              object-fit: scale-down;
+            }
+          }
+        }
+        .qsale-brands {
+          width: 100%;
+          max-width: 1440px;
+          margin: 0 auto;
+          margin-bottom: 135px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-around;
+          .qsale-brand {
+            .image-brand {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .text-brand {
+              color: #333333;
+              line-height: 24px;
+              max-width: 240px;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    .tpvn-beauty_commerce {
+      position: relative;
+      line-height: 32px;
+      color: #333333;
+      margin-top: 130px;
+      .top-container {
+        .top-tooltip {
+          width: 100%;
+          max-width: 100%;
+          background: #d0d0d0;
+        }
+      }
+      .beauty_commerce-banner {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        img {
+          max-width: 100%;
+          object-fit: contain;
+        }
+      }
+      .beauty_commerce-detail {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 292px;
+        height: 790px;
+        .beauty_commerce-content {
+          .detail-title {
+          }
+          .beauty_commerce-text {
+            font-size: 16px;
+            margin-top: 39px;
+          }
+        }
+      }
+    }
+    .tpvn-software_development {
+      margin-top: 130px;
+      .software_development-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        line-height: 32px;
+        color: #333333;
+        & > div {
+          margin-top: 78px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          .title {
+            flex-basis: 30%;
+          }
+          .detail {
+            flex-basis: 70%;
+            font-size: 16px;
+          }
+        }
+        .customer-logo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          img {
+            max-width: 100%;
+            object-fit: scale-down;
+          }
+        }
+      }
+    }
+    .tpvn-office_map {
+      margin-top: 130px;
+      .map {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 100%;
+          object-fit: scale-down;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .tpvn-work {
+    .tpvn-main {
+      p.product-title {
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      .organization-content {
+        & > div {
+          flex-basis: 100%;
+          justify-content: flex-start!important;
+          line-height: 50px;
+          & > a {
+            padding: 0;
+            flex-direction: row!important;
+            flex-basis: 100%;
+            align-items: left!important;
+            text-align: left;
+            .title {
+              flex-basis: 50%;
+              text-indent: 20px;
+            }
+            .category-text {
+              flex-basis: 50%;
+            }
+          }
+        }
+        .about-us {
+          padding-left: 0!important;
+        }
+        .contact {
+          padding-right: 0!important;
+        }
+      }
+      .tpvn-services {
+        .local-service {
+          .work-slider {
+            .slider-container {
+              margin-top: 18px;
+              .slick-prev {
+                left: 5px !important;
+              }
+              .slick-next {
+                right: 5px !important;
+              }
+              .slick-slide {
+                height: 270px !important;
+              }
+            }
+          }
+          .service-detail {
+            flex-direction: column;
+            margin-top: 60px !important;
+            .service-description {
+              flex-basis: 100%!important;
+              .app-available {
+                flex-direction: column;
+                .store-logo {
+                  img {
+                    max-width: 280px !important;
+                  }
+                  &:nth-child(2) {
+                    margin-left: 0 !important;
+                    margin-top: 40px;
+                  }
+                }
+              }
+            }
+            .service-feature {
+              flex-basis: auto !important;
+              align-items: flex-start !important;
+              margin-top: 40px;
+              padding-left: 0!important;
+            }
+          }
+        }
+        .qsale-korea {
+          margin-top: 52px!important;
+          .qsale-banner {
+            .banner-label {
+              left: 30px;
+            }
+          }
+          .qsale-detail {
+            flex-direction: column;
+            .qsale-text {
+              width: 100%;
+              & > p {
+                padding-left: 30px;
+              }
+              .qsale-desciption {
+                max-width: 40%;
+              }
+            }
+            .qsale-about {
+              margin-left: 0;
+              img {
+                max-width: 320px;
+              }
+            }
+          }
+          .qsale-brands {
+            justify-content: center;
+            margin-bottom: 0;
+            .qsale-brand {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              flex-basis: 50%;
+              padding-top: 40px;
+            }
+          }
+        }
+      }
+      .tpvn-beauty_commerce {
+        margin-top: 52px!important;
+        .beauty_commerce-banner {
+          position: static;
+          max-width: none;
+          margin-top: 60px;
+          margin-right: -30px;
+          img {
+            max-width: 100%;
+          }
+        }
+        .beauty_commerce-detail {
+          height: auto;
+          margin-top: 60px;
+        }
+      }
+      .tpvn-software_development {
+        margin-top: 52px;
+        .software_development-content {
+          & > div {
+            flex-direction: column;
+            .title {
+              flex-basis: auto;
+            }
+            .detail {
+              flex-basis: auto;
+              margin-top: 40px;
+            }
+          }
+        }
+        .customer-logo {
+          img {
+            max-width: 100% !important;
+          }
+        }
+      }
+      .tpvn-office_map {
+        margin-top: 52px;
+      }
+    }
+  }
+}
+@media (max-width: 414px) {
+  .tpvn-work {
+    .tpvn-main {
+      .tpvn-services {
+        .qsale-korea {
+          margin-top: 18px!important;
+          .qsale-detail {
+            .qsale-text {
+              .qsale-desciption {
+                max-width: 100%;
+                padding-bottom: 20px;
+              }
+            }
+          }
+          .qsale-brands {
+            .qsale-brand {
+              flex-basis: 45%;
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+      .tpvn-beauty_commerce {
+        margin-top: 18px!important;
+        .beauty_commerce-banner {
+          margin-right: -10px!important;
+        }
+      }
+      .tpvn-software_development {
+        margin-top: 18px;
+      }
+      .tpvn-office_map {
+        margin-top: 18px!important;
+      }
+    }
+  }
+}

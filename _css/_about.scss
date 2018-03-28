@@ -1,0 +1,449 @@
+$dark-green:  #4bc970;
+$light-gray:  #fafafa;
+$white:       #fff;
+
+.tpvn-about-us {
+  .tpvn-main {
+    .tpvn-employees {
+      .main-container {
+        margin-top: 79px;
+        .employee-profiles {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          .odd-bg {
+            color: rgba(3, 3, 3, 0.7) !important;
+            background: #cccccc !important;
+          }
+          .profile-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            color: #fff;
+            -webkit-perspective: 1000;
+            -moz-perspective: 1000;
+            -o-perspective: 1000;
+            perspective: 1000;
+            &.flip {
+              .flipper {
+                -webkit-transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -o-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+              }
+            }
+            .flipper {
+              width: 200px;
+              height: 200px;
+              -webkit-transition: 1s;
+              -webkit-transform-style: preserve-3d;
+              -moz-transition: 1s;
+              -moz-transform-style: preserve-3d;
+              -o-transition: 1s;
+              -o-transform-style: preserve-3d;
+              transition: 1s;
+              transform-style: preserve-3d;
+              position: relative;
+              & > div {
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+              .employee-front {
+                width: 200px;
+                height: 200px;
+                background: $light-gray;
+                //border: 1px solid darken($light-gray, 12%);
+                box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+                /* front pane, placed above back */
+                z-index: 2;
+                /* for firefox 31 */
+                transform: rotateY(0deg);
+                #mark {
+                  margin: 9em auto;
+                  max-width: 200px;
+                }
+                img {
+                  max-width: 200px;
+                  object-fit: scale-down;
+                }
+                & > div {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  text-align: center;
+                }
+                img + .employee-detail {
+                  opacity: 0;
+                }
+                .employee-detail {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  width: 200px;
+                  height: 200px;
+                  background: #333333;
+                  opacity: 0.8;
+                  transition: opacity 0.1s ease-in-out 0.1s;
+                  .text-name {
+                    text-size: 20px;
+                    line-height: 24px;
+                  }
+                  .text-position {
+                    font-size: 12px;
+                    line-height: 24px;
+                  }
+                }
+              }
+              .employee-back {
+                display: flex;
+                flex-wrap: wrap;
+                width: 200px;
+                height: 200px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                color: $white;
+                -webkit-transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -o-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+                .employee-detail {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  width: 200px;
+                  height: 200px;
+                  background: #3c84c6;
+                  .text-name {
+                    line-height: 30px;
+                  }
+                  .text-position {
+                    font-size: 20px;
+                    line-height: 18px;
+                  }
+                  .employee-sns {
+                    position: absolute;
+                    bottom: 20px;
+                    font-size: 0.7em;
+                    color: #ffffff;
+                  }
+                }
+                h1 {
+                  width: 100%;
+                  color: $white;
+                  font-size: 0.8em;
+                  font-weight: 500;
+                  line-height: 20px;
+                  letter-spacing: -1px;
+                  margin: 0 0.3em;
+                  text-transform: none;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+
+                h2 {
+                  font-size: 0.9em;
+                  margin: 0;
+                  margin-left: 0.2em;
+                  line-height: 20px;
+                  width: 100%;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+
+                .info-list {
+                  width: 100%;
+                  font-size: 0.5em;
+                  margin: 0 0.3em;
+                  line-height: initial;
+                  li {
+                    width: 96%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+                }
+
+                .icon-margin-right {
+                  margin-right: 1em;
+                }
+
+                .text-center {
+                  margin: 5px auto 0;
+                  i {
+                    font-size: 110px;
+                  }
+                }
+
+                #card-pic {
+                  border: 4px solid fade-out($white, 0.5);
+                  max-width: 110px;
+                  &.img-circle {
+                    border-radius: 50%;
+                  }
+                }
+              }
+            }
+            & > p {
+              margin: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .tpvn-milestone {
+      margin-top: 130px;
+      .timeline {
+        padding-top: 137px;
+        padding-left: 151px;
+        img {
+          max-width: 100%;
+          object-fit: scale-down;
+        }
+      }
+    }
+    .tpvn-overview {
+      margin-top: 130px;
+      margin-bottom: 60px;
+      .overview-quotes {
+        margin-top: 173px;
+        text-align: center;
+        .quote-text {
+          margin: 0 auto;
+          font-size: 80px;
+          height: 206px;
+          max-width: 1200px;
+          border: solid 1px #91c5eb;
+          color: #91c5eb;
+          text-align: center;
+          p {
+            margin: 0 auto;
+            margin-top: -50px;
+            background: #ffffff;
+            max-width: 903px;
+          }
+        }
+      }
+      .text-overview {
+        .wrapper {
+          max-width: 667px;
+          margin: 0 auto;
+          font-size: 16px;
+          line-height: 32px;
+          color: #333333;
+          ul.top-content {
+            margin-top: 85px;
+            padding: 0;
+            p.hlt {
+              font-size: 24px;
+              line-height: 32px;
+            }
+            li {
+              list-style: none;
+              line-height: 24px;
+            }
+          }
+          .table-contain {
+            margin-top: 47px;
+            .row-table {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              &:not(:first-child) {
+                border-top: solid 1px #f2f2f2;
+              }
+              & > div {
+                min-height: 63px;
+              }
+              .title-fields {
+                flex-basis: 35%;
+              }
+              .text-fields {
+                flex-basis: 65%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tpvn-about-us {
+    .wrapper {
+      margin: 0 30px;
+    }
+    .tpvn-main {
+      p.product-title {
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      .tpvn-employees {
+        &:not(:first-child) {
+          margin-top: 60px !important;
+        }
+        .main-container {
+          margin-top: 60px !important;
+          .employee-profiles {
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0 50px;
+            .profile-box {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              height: auto !important;
+              width: auto !important;
+              margin-top: 30px;
+              justify-content: center;
+              .flipper {
+                width: 280px!important;
+                height: 280px!important;
+                .employee-front {
+                  width: 280px!important;
+                  height: 280px!important;
+                  img {
+                    max-width: 280px !important;
+                  }
+                  img + .employee-detail {
+                    padding: 10px 0;
+                    width: auto !important;
+                    height: auto !important;
+                  }
+                  .employee-detail {
+                    width: 280px !important;
+                    height: 280px !important;
+                  }
+                }
+                .employee-back {
+                  width: 280px!important;
+                  height: 280px!important;
+
+                  h1 {
+                    margin-left: 0.5em;
+                    font-size: 1.2em!important;
+                    line-height: 26px!important;
+                  }
+
+                  h2 {
+                    margin-left: 0.7em!important;
+                  }
+
+                  ul {
+                    margin-left: 1em!important;
+                    font-size: 0.7em!important;
+                  }
+
+                  .employee-detail {
+                    width: 280px !important;
+                    height: 280px !important;
+                    .employee-sns {
+                      padding-bottom: 20px;
+                    }
+                  }
+
+                  .text-center {
+                    i {
+                      font-size: 160px;
+                    }
+                  }
+
+                  #card-pic {
+                    max-width: 160px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .tpvn-milestone {
+        margin-top: 52px!important;
+        .timeline {
+          padding: 0;
+          padding-top: 40px;
+          img {
+            max-width: 100% !important;
+          }
+        }
+      }
+      .tpvn-overview {
+        margin-top: 52px!important;
+        .overview-quotes {
+          margin-top: 40px;
+          .quote-text {
+            height: auto !important;
+            width: 100% !important;
+            font-size: 44px !important;
+            border: 0 !important;
+            p {
+              margin-top: 0 !important;
+            }
+          }
+        }
+        .text-overview {
+          ul.top-content {
+            margin-top: 60px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .tpvn-about-us {
+    .tpvn-main {
+      .tpvn-employees {
+        .employee-profiles {
+          padding: 0 30px !important;
+          justify-content: center!important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .tpvn-about-us {
+    .tpvn-main {
+      .tpvn-employees {
+        .main-container {
+          margin-top: 0 !important;
+        }
+        .employee-profiles {
+          padding: 0 !important;
+          justify-content: space-around !important;
+        }
+      }
+      .tpvn-milestone {
+        margin-top: 18px !important;
+      }
+      .tpvn-overview {
+        margin-top: 18px!important;
+      }
+    }
+  }
+}
